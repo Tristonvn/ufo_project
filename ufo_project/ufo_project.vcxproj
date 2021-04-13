@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ufo_functions.cpp" />
     <ClCompile Include="ufo_project.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ufo_functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
