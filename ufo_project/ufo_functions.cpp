@@ -10,6 +10,25 @@ void greet() {
     std::cout << "guessing the letters in the codeword.\n";
 }
 
+void end_game(std::string answer, std::string codeword) {
+    if (answer == codeword) {
+        std::cout << "Hooray! You saved the person and earned a medal of honor!";
+    }
+    else {
+        std::cout << "Oh no! The UFO just flew away with another person!";
+    }
+}
+
+void displayStatus(std::vector<char> incorrect, std::string answer) {
+    std::cout << "Incorrect guesses: ";
+    for (char letter : incorrect) {
+        std::cout << letter;
+    }
+    std::cout << "\nCodeword: ";
+    for (char letter : answer) {
+        std::cout << letter << " ";
+    }
+}
 
 
 void display_misses(int misses) {
